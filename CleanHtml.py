@@ -2,10 +2,13 @@ from bs4 import BeautifulSoup
 
 print("bersihkan html")
 
-namaInput = "/home/yudiwbs/lombalazada/data/out_clarity_train_kecil.label0"
-namaOutput = "/home/yudiwbs/lombalazada/data/out_clarity_train_kecil_bersih.label0"
 
-fTeks = open(namaInput)
+
+namaInput = "/home/yudiwbs/lombalazada/data/out_clarity_train.label0"
+namaOutput = "/home/yudiwbs/lombalazada/data/out_clarity_train_bersih.label0"
+
+fTeks   = open(namaInput)
+fOutput = open (namaOutput,"w")
 
 try:
     soup = BeautifulSoup(fTeks, 'lxml')
@@ -14,9 +17,11 @@ try:
 
     arrBaris = teksBersih.split("\n")
     for line in arrBaris:
-        line = line.rstrip('\n').strip().casefold()
-        print(line)
+        line = line.strip().casefold()
+        fOutput.write(line+"\n")
+        #print(line)
         #endfor
     #end for
 finally:
     fTeks.close()
+    fOutput.close()
