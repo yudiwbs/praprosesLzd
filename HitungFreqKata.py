@@ -31,7 +31,8 @@ def proseFile(namaFile):
 
 dict = {}
 #proseFile("/home/yudiwbs/lombalazada/data/out_clarity_train.label0")
-proseFile("/home/yudiwbs/lombalazada/data/out_clarity_train.label1")
+namaFile = "/home/yudiwbs/lombalazada/data/out_clarity_train_bersih.label0"
+proseFile(namaFile)
 sortedDict = sorted(dict.items(), key=operator.itemgetter(1), reverse=True)
 print(str(sortedDict))
 #print(str(dict))
