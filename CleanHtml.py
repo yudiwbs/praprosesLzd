@@ -1,16 +1,21 @@
 from bs4 import BeautifulSoup
 
-print("bersihkan html")
+print("bersihkan html dari file")
 
 #namaInput = "/home/yudiwbs/lombalazada/data/out_clarity_train_kecil.label0"
 #namaOutput = "/home/yudiwbs/lombalazada/data/out_clarity_train_kecil_bersih.label0"
 
-namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train.label0"
-namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train_bersih.label0"
+#namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train.label0"
+#namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train_bersih.label0"
 
 
-fTeks   = open(namaInput)
-fOutput = open (namaOutput,"w")
+#validasi
+namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/data_valid_hanyateks.csv"
+namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/data_valid_hanyateks_bersih.csv"
+
+
+fTeks   = open(namaInput, "r")
+fOutput = open(namaOutput,"w")
 
 try:
     soup = BeautifulSoup(fTeks, 'lxml')
