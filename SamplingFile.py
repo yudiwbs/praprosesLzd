@@ -3,17 +3,22 @@
 
 import random
 
-jumTargetBaris = 3000
+jumTargetBaris = 11000
 
-namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train_bersih.label1"
-namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train_bersih_undersampling.label1"
+#clarity
+#namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train_bersih.label1"
+#namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train_bersih_undersampling.label1"
+
+#conciseness
+namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_concis_train_bersih.label1"
+namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_concis_train_bersih_undersampling.label1"
 
 
 fInput  = open(namaInput,"r")
 fOutput = open(namaOutput,"w")
 
 try:
-    #hitung jumlah baris, sambil ambil data, jumlahnya lebih besar daripada jumlah targetbaris
+    #hitung jumlah baris, sambil ambil data, jumlahnya pasti lebih besar daripada jumlah targetbaris
     arrLine = []
     try:
         i = 0
