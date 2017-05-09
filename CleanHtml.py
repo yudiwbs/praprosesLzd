@@ -5,8 +5,8 @@ print("bersihkan html")
 #namaInput = "/home/yudiwbs/lombalazada/data/out_clarity_train_kecil.label0"
 #namaOutput = "/home/yudiwbs/lombalazada/data/out_clarity_train_kecil_bersih.label0"
 
-namaInput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train.label1"
-namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train_bersih.label1"
+namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train.label0"
+namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train_bersih.label0"
 
 
 fTeks   = open(namaInput)
