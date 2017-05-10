@@ -12,18 +12,17 @@
 # ambil file teksnya
 
 #direktori tempat data, jangan lupa tambahkan slash diujung
-rootDir = "/home/yudiwbs/lombalazada/data/"
+#rootDir = "/home/yudiwbs/lombalazada/data/persiapanrun2/"
+rootDir = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun2/"
 
-#rootDir = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/"
-
-fileSumber = rootDir+"data_train.csv"
+fileSumber = rootDir+"data_train_rapi.csv"
 fileLabelClarity  = rootDir+"clarity_train.labels"
-fileTargetClarity0 = rootDir+"out_clarity_train.label0"
-fileTargetClarity1 = rootDir+"out_clarity_train.label1"
+fileTargetClarity0 = rootDir+"out_clarity_train_rapi.label0"
+fileTargetClarity1 = rootDir+"out_clarity_train_rapi.label1"
 
 fileLabelConcis   = rootDir+ "conciseness_train.labels"
-fileTargetConcis0 = rootDir+ "out_concis_train.label0"
-fileTargetConcis1 = rootDir+ "out_concis_train.label1"
+fileTargetConcis0 = rootDir+ "out_concis_train_rapi.label0"
+fileTargetConcis1 = rootDir+ "out_concis_train_rapi.label1"
 
 
 print("Split dataset lomba ")
@@ -102,7 +101,7 @@ try:
             #print(isi)
             fTargetConcis0.write(isi+"\n")
         else:
-            print("<<< error  Concis >>>")
+            print("<<< error  concis >>>")
 
         i = i + 1
 

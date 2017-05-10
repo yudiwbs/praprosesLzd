@@ -3,15 +3,20 @@
 
 import random
 
-jumTargetBaris = 11000
+jumTargetBaris = 4000
 
 #clarity
-#namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train_bersih.label1"
-#namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_clarity_train_bersih_undersampling.label1"
+#pastikan jumtargetbaris terisi
+#namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun2/out_clarity_train_rapi.label1"
+#namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun2/out_clarity_train_rapi_undersampling.label1"
 
 #conciseness
-namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_concis_train_bersih.label1"
-namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/out_concis_train_bersih_undersampling.label1"
+#pastikan jumtargetbaris terisi
+#namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun2/out_concis_train_rapi.label1"
+#namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun2/out_concis_train_rapi_undersampling.label1"
+namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun2/out_concis_train_rapi.label0"
+namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun2/out_concis_train_rapi_undersampling.label0"
+
 
 
 fInput  = open(namaInput,"r")

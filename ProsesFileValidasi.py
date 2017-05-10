@@ -1,4 +1,5 @@
 #proses file validasi (data_valid.csv)
+#ambil deskripsinya saja...
 #bagusnya nanti digabung dengan splitdata (split data pake ini)
 
 
