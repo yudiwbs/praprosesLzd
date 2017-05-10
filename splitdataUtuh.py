@@ -1,21 +1,21 @@
 # untuk labelnya ada dua kagori: clarity (0 dan 1) dan concisness (0 dan 1)
 # supaya mengikuti lib cnn-klaisifkasiteks, maka perlu displit jadi dua file untuk setiap kategori
-# bedanya dengan splitdata, program yang ini mengambil utuh semua baris!
+# bedanya dengan splitdata.py, program yang ini mengambil utuh semua baris!
 
 # ambil file teksnya
 
 # direktori tempat data, jangan lupa tambahkan slash diujung
 # rootDir = "/home/yudiwbs/lombalazada/data/persiapanrun2/"
-rootDir = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun2/"
+rootDir = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/"
 
-fileSumber = rootDir + "data_train_rapi.csv"
+fileSumber = rootDir + "data_train_rapi_casefold.csv"
 fileLabelClarity = rootDir + "clarity_train.labels"
-fileTargetClarity0 = rootDir + "out_clarity_train_rapi.label0"
-fileTargetClarity1 = rootDir + "out_clarity_train_rapi.label1"
+fileTargetClarity0 = rootDir + "out_clarity_train_rapi_casefold.label0"
+fileTargetClarity1 = rootDir + "out_clarity_train_rapi_casefold.label1"
 
 fileLabelConcis = rootDir + "conciseness_train.labels"
-fileTargetConcis0 = rootDir + "out_concis_train_rapi.label0"
-fileTargetConcis1 = rootDir + "out_concis_train_rapi.label1"
+fileTargetConcis0 = rootDir + "out_concis_train_rapi_casefold.label0"
+fileTargetConcis1 = rootDir + "out_concis_train_rapi_casefold.label1"
 
 print("Split dataset lomba ")
 
