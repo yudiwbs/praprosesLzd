@@ -8,9 +8,9 @@
 
 import os
 import operator
-posDir = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/temp3/"
-namaFileOut = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/freqkata.txt"
-namaFileOutSatu =  "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/freqkatasatu.txt" #kata yang hanya muncul satu kali, calon dibuang
+posDir = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/temp4/"
+namaFileOut     = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/temp5/freqkata.txt"
+namaFileOutSatu =  "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/temp5/freqkatasatu.txt" #kata yang hanya muncul satu kali, calon dibuang
 
 dict = {}
 
