@@ -1,66 +1,47 @@
 #memproses file skor
 #contoh per baris: [-19.50937271  21.65632629]
-#skor diambil yg maksimum jika
 #ganti jadi probabilitas
+# HATI_HATI BARIS DUMMY
 
 
 import re
+import numpy as np
 
-fileInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run3/score_concis.csv"
-fileOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run3/prob_concis.csv"
+#HATI2 nama file
+#fileInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run4/score_concis_run4.csv"
+#fileOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run4/prob_concis_run4.csv"
+
+fileInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun6/score_clarity_training.csv"
+fileOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun6/prob_clarity_training.csv"
+
+
+def softmax(x):
+    """Compute softmax values for each sets of scores in x."""
+    e_x = np.exp(x - np.max(x))
+    return e_x / e_x.sum()
+
+
 
 fInput  = open(fileInput,"r")
 fOutput = open(fileOutput, "w")
 
 try:
     i = 0
-    val = 0
-    max = -1
-    maxSelisih = 0
-
     for line in fInput:
         line2 = line.rstrip('\n').strip()
         line2 = re.sub('([\[\]])', ' ', line2)
         #buang dulu kurung siku
         angka = line2.split()
-
-
         a0 = float(angka[0])
         a1 = float(angka[1])
-
-        selisih = abs(abs(a0)-abs(a1))
-
-
-        if (a0 > a1):
-            val = a0
-        else:
-            val = a1
-        if val>max:
-           max = val
-
-        if (selisih > maxSelisih) :
-            maxSelisih = selisih
-
-
-        #rentang = abs(a0) + abs(a1)
-        #probabilitas hanya untuk kelas 1
-        #if (rentang>0):
-        #   prob = abs(a1) / rentang
-        #else:
-        #   prob = 0
-
-        #if (val>100) :
-        #   print(angka[0] + "->" + angka[1] + "->" + str(i+1) )
-
-        if (selisih>7) :
-           print(angka[0] + "->" + angka[1] + "->" + str(selisih) + "-->" + str(i+1) )
-
-        #fOutput.write(isi+"\n")
-        #print("Proses baris ke-"+str(i+1))
+        scores = []
+        scores.append(a0)
+        scores.append(a1)
+        prob = softmax(scores)
+        fOutput.write(str(prob[1])+"\n")
         i = i+1
+        print("proses baris ke:"+str(i))
     #endfor
-    print("maks:"+str(max))
-    print("maks selisih:" + str(maxSelisih))
 finally:
     fInput.close()
     fOutput.close()

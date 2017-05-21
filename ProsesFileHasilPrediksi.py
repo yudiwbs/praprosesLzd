@@ -2,13 +2,12 @@
 #jangan lupa hapus baris terakhir efek dummy
 
 #clarity
-#fileInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run2/prediction_run2_clarity.csv"
-#fileOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run2/clarity_run2.predict"
+# fileInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run4/prediction_run4_clarity.csv"
+# fileOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run4/clarity_valid.predict"
 
 #conciseness
-fileInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run2/prediction_run2_concis.csv"
-fileOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run2/concis_run2.predict"
-
+fileInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run4/prediction_run4_concis.csv"
+fileOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/run4/conciseness_valid.predict"
 
 
 fInput  = open(fileInput,"r")

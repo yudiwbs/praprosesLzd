@@ -8,14 +8,14 @@
 # rootDir = "/home/yudiwbs/lombalazada/data/persiapanrun2/"
 rootDir = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/"
 
-fileSumber = rootDir + "data_train_rapi_casefold.csv"
+fileSumber = rootDir + "data_train_rapi_casefold_vocabbuang.csv"
 fileLabelClarity = rootDir + "clarity_train.labels"
-fileTargetClarity0 = rootDir + "out_clarity_train_rapi_casefold.label0"
-fileTargetClarity1 = rootDir + "out_clarity_train_rapi_casefold.label1"
+fileTargetClarity0 = rootDir + "out_clarity_train_rapi_casefold_vocabbuang.label0"
+fileTargetClarity1 = rootDir + "out_clarity_train_rapi_casefold_vocabbuang.label1"
 
 fileLabelConcis = rootDir + "conciseness_train.labels"
-fileTargetConcis0 = rootDir + "out_concis_train_rapi_casefold.label0"
-fileTargetConcis1 = rootDir + "out_concis_train_rapi_casefold.label1"
+fileTargetConcis0 = rootDir + "out_concis_train_rapi_casefold_vocabbuang.label0"
+fileTargetConcis1 = rootDir + "out_concis_train_rapi_casefold_vocabbuang.label1"
 
 print("Split dataset lomba ")
 

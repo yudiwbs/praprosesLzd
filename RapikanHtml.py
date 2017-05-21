@@ -4,13 +4,13 @@
 
 import re
 
-namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/data_train.csv"
-namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/data_train_rapi_casefold.csv"
+#namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/data_train.csv"
+#namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/data_train_rapi_casefold.csv"
 
 
 #validasi
-#namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/data_valid.csv"
-#namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/data_valid_rapi.csv"
+namaInput  = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/data_valid.csv"
+namaOutput = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/data_valid_rapi_casefold.csv"
 
 
 fInput   = open(namaInput, "r")

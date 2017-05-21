@@ -8,9 +8,16 @@
 
 import os
 import operator
-posDir = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/temp4/"
-namaFileOut     = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/temp5/freqkata.txt"
-namaFileOutSatu =  "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/temp5/freqkatasatu.txt" #kata yang hanya muncul satu kali, calon dibuang
+
+# posDir = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/temp4/"
+# namaFileOut     = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/temp5/freqkata.txt"
+# namaFileOutSatu =  "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/temp5/freqkatasatu.txt" #kata yang hanya muncul satu kali, calon dibuang
+
+posDir = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/temp/" #harus ada slash
+namaFileOut     = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/freqkata_validasi_vocabbuang.txt" #sebagian vocab sudah dibuang berdasarkan data training
+namaFileOutSatu =  "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/freq_satu_kata_validasi_vocabbuang.txt" #kata yang hanya muncul satu kali, calon dibuang
+
+
 
 dict = {}
 

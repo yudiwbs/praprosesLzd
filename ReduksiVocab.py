@@ -7,9 +7,20 @@ import re
 # fileOutput    = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/temp3/coba_vocabbuang.csv"
 
 
-fileKataBuang = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/freqkatasatu.txt"
-fileInput     = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/data_train_rapi_casefold.csv"
-fileOutput    = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/data_train_rapi_casefold_vocabbuang.csv"
+# fileKataBuang = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/freqkatasatu.txt"
+# fileInput     = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/data_train_rapi_casefold.csv"
+# fileOutput    = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/data_train_rapi_casefold_vocabbuang.csv"
+
+#validasi
+# fileKataBuang = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/persiapanrun3/freqkatasatu.txt"
+# fileInput     = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/data_valid_rapi_casefold.csv"
+# fileOutput    = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/data_valid_rapi_casefold_vocabbuang.csv"
+
+# buang dari data validasi yang freq kemunculan satu, jadi ada dua kali proses buang.
+fileKataBuang = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/freq_satu_kata_validasi_vocabbuang.txt"
+fileInput     = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/data_valid_rapi_casefold_vocabbuang.csv"
+fileOutput    = "/media/yudiwbs/programdata/ubuntu/lombalazada/data/validasi/data_valid_rapi_casefold_vocabbuang_2.csv"
+
 
 fKataBuang = open(fileKataBuang,"r")
 fInput  = open(fileInput,"r")
